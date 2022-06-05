@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="nav">
+        <div class="navbar">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </section>
+    <section id="search-section">
+        <div class="form">
+            <label for="search">Search for a City:</label>
+            <input type="text" id="search" class="form-control" autocomplete="off">
+            <button class="submit-btn" id="submit">Submit</button>
+        </div>
+    </section>
+    <section class="main-info">
+        <div class="main-container">
+            <div class="city-data" id="cityData">
+                <h1 id="cityName"></h1>
+                <img id="logoHeader">
+                <ul id="cityInfo">
+                    <li class="cityList" id="cityTemp"></li>
+                    <li class="cityList" id="cityWind"></li>
+                    <li class="cityList" id="cityHumidity"></li>
+                    <li class="cityList" id="cityUV"></li>
+                </ul>
+            </div>
+        </div><br>
+    </section>
+    <section class="fivedaysection">
+        <h1 class="fiveday">5-Day Forecast</h1>
+        <div class="fivedaycontainer">
+            <div class="weekforecast" id="dayone"></div>
+            <div class="weekforecast" id="daytwo"></div>
+            <div class="weekforecast" id="daythree"></div>
+            <div class="weekforecast" id="dayfour"></div>
+            <div class="weekforecast" id="dayfive"></div>
+        </div>
+    </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
