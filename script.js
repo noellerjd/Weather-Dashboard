@@ -13,7 +13,7 @@ var formEl = document.querySelector('.form')
 // var savedList = document.querySelector('.savedList');
 // savedList.innerHTML = renderSavedSearch()
 
-var apiKey = '0a45a68090d0c1d4c19b1d2ba3a9e579'
+var apiKey = prompt("Please Enter API Key", "0a45a68090d0c1d4c19b1d2ba3a9e579")
 var limit = 1
 var exclude = "minutely,hourly,alerts"
 var latitude = ''
