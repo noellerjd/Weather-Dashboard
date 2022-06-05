@@ -31,7 +31,7 @@ var submitSearch = (event) => {
         mainContainer.style.display = "block";
         daytitle.style.display = "flex";
         fivedaycontainer.style.display = "flex";
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchEl.value}&limit=1&appid=0a45a68090d0c1d4c19b1d2ba3a9e579`)
+        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchEl.value}&limit=1&appid=${apiKey}`)
         .then(response => {return response.json()})
         .then(result => {this.renderGeoResults(result);})
     }
