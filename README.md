@@ -1,6 +1,8 @@
 # Weather-Dashboard
 A Simple Dashboard that, upon searching a location, will log the current and future tempurature in said location.
 
+![image](https://user-images.githubusercontent.com/50307506/172032937-9b12ba40-d39c-4bb8-a881-bb7c6713638f.png)
+
 API Used: https://openweathermap.org/api
 
 # Motivation
